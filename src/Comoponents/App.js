@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
+import { Header, Footer } from './Layouts'
+import Exercises from './Exercises'
 
-export default props => {
-  return (
-    <div>
-      <h1>App</h1>
-    </div>
-  )
+class App extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Header />
+        <Exercises />
+        <Footer />
+      </Fragment>
+    )
+  }
 }
+
+export default App
